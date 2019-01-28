@@ -1,0 +1,50 @@
+.App {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: #1c2022;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gauge-container {
+  .title {
+    color: #fff;
+    text-align: center;
+    padding: 0 0 1rem;
+  }
+
+  width: 256px;
+  height: 256px;
+
+  .gauge {
+    display: block;
+
+    .value {
+      fill: #fff;
+    }
+
+    .rail {
+      fill: transparent;
+      stroke: rgba(255, 255, 255, 0.1);
+    }
+
+    .progress {
+      fill: transparent;
+      stroke: #17c6c7;
+      stroke-linecap: round;
+
+      &.animated {
+        transition: all 0.3s ease-out;
+      }
+    }
+  }
+}
